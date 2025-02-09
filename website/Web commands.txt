@@ -1,0 +1,5 @@
+
+
+
+Send Sensor data:
+  https://iothealthcare.000webhostapp.com/connect.php?g_value=100&t_value=25&p_value=10

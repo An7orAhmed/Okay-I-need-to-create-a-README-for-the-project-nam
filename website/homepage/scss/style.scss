@@ -1,0 +1,159 @@
+@import "normalize";
+@import "varriable";
+*{
+	box-sizing: border-box;
+}
+body{
+	background: url("../img/background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	font-family: $myfont;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	@media screen and (max-width: 700px) {
+		margin-top: 60px;
+
+	}
+
+}
+
+.container {
+  margin: 10px 80px;
+  background-color: transparentize($color2,0.1);
+  @media screen and (max-width: 700px) {
+		margin: 10px 10px;
+	}
+  padding: 10px;
+}
+
+header{
+	position: fixed;
+	background-color: transparentize($color1,0.3);
+	width: 100%;
+	height: 100px;
+	z-index: 999999;
+	top: 0;
+
+	h1{
+		color: white;
+		text-align: center;
+		padding: 0px 10px;
+		font-size: 40px;
+	}
+
+	@media screen and (max-width: 700px) {
+		height: 60px;
+		h1{
+			font-size: 24px;
+		}
+	}
+}
+
+footer{
+	position: fixed;
+	width: 100%;
+	z-index: 999999;
+	background-color: transparentize($color1,0.3);
+	color: white;
+	bottom: 0;
+	font-size: 12px;
+	text-align: center;
+	padding: 3px;
+}
+.form{
+  width:100%;
+  padding: 5px 10px;
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  &:focus{
+  	  background-color: #ddd;
+  outline: none;
+  }
+  form{
+	width: 100%
+}
+}
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.flex-container > div {
+  width: 90%;
+  height:100px;
+  text-align: center;
+  line-height: 10px;
+  padding: 20px 0;
+  font-size: 0.8em;
+}
+
+.smoke{
+	background-color: transparentize($smoking,0.8);
+	width: 100%;
+	text-align: center;
+  	line-height: 10px;
+ 	 padding: 10px 0;
+  	font-size: 0.8em;
+
+}
+.temp{
+	background-color: transparentize($temperature,0.5);
+}
+.pulse{
+	background-color: transparentize($pulse-rate,0.5);
+}
+
+#message{
+	display: none;
+	color: red;
+}
+
+#info{
+	display: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  &:hover{
+  	  opacity:1;
+  }
+}
+
